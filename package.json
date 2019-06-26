@@ -1,0 +1,32 @@
+{
+  "name": "boilerplate-node-api",
+  "version": "1.0.0",
+  "description": "A boilerplate Node/Express API",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "start": "npm run build && nodemon dist/index.js",
+    "serve": "node dist/index.js",
+    "test": "mocha --require @babel/register"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "api",
+    "express"
+  ],
+  "author": "Kyrsten Kelly",
+  "email": "kyrsten.kelly@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1"
+  }
+}
